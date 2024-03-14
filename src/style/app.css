@@ -80,6 +80,9 @@ body.shell {
 
 body.stream {
     background-color: var(--stream-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .terminal-container {
@@ -103,8 +106,10 @@ body.stream {
 
 .device-view {
     z-index: 1;
-    float: right;
-    display: inline-block;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .video-layer {
@@ -118,7 +123,6 @@ body.stream {
 }
 
 .video {
-    float: right;
     max-height: 100%;
     max-width: 100%;
     background-color: #000000;
@@ -126,8 +130,7 @@ body.stream {
 
 
 .control-buttons-list {
-    float: right;
-    width: 3.715rem;
+    margin-top: 10px;
     background-color: var(--control-buttons-bg-color);
 }
 
